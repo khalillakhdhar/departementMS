@@ -10,7 +10,7 @@ public interface NoteService {
 public NoteDTO createOneNote(NoteDTO note,long departementId);
 public Page<NoteDTO> getAllNotes(Pageable page);
 public Page<NoteDTO> getByAuteur(String auteur,Pageable page);
-public Page<NoteDTO> getByDescriptionContent(String desription);
+public Page<NoteDTO> getByTexteContent(String texte,Pageable page);
 public void deleteOneNote(long id);
 public NoteDTO getOneNote(long id);
 
